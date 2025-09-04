@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CargaFamiliares-WebApi", "CargaFamiliares-WebApi\CargaFamiliares-WebApi.csproj", "{AD306EC9-79DA-4108-A5D1-1CAF7585C7EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD306EC9-79DA-4108-A5D1-1CAF7585C7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD306EC9-79DA-4108-A5D1-1CAF7585C7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD306EC9-79DA-4108-A5D1-1CAF7585C7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD306EC9-79DA-4108-A5D1-1CAF7585C7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AC16C9D-D834-4653-9FA5-409A0C02FDB7}
+	EndGlobalSection
+EndGlobal
