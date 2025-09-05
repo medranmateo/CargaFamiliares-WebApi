@@ -19,7 +19,8 @@ namespace CargaFamiliares_WebApi.Application.Services
                 Documentos = await _tiposDescripcionRepository.ObtenerTiposDocumento(),
                 Escolaridades = await _tiposDescripcionRepository.ObtenerTipoEscolaridad(),
                 Parentescos = await _tiposDescripcionRepository.ObtenerTipoParentesco(),
-                Ocupaciones = await _tiposDescripcionRepository.ObtenerOcupaciones()
+                Ocupaciones = await _tiposDescripcionRepository.ObtenerOcupaciones(),
+                EstadosCiviles = await _tiposDescripcionRepository.ObtenerEstadosCiviles()
             };
 
             return dto;
@@ -53,6 +54,12 @@ namespace CargaFamiliares_WebApi.Application.Services
         {
             var ocupaciones = await _tiposDescripcionRepository.ObtenerOcupaciones();
             return ocupaciones;
+        }
+
+        public async Task<IEnumerable<EstadoCivil>> ObtenerEstadosCiviles()
+        {
+            var estadosCiviles = await _tiposDescripcionRepository.ObtenerEstadosCiviles();
+            return estadosCiviles;
         }
     }
 }

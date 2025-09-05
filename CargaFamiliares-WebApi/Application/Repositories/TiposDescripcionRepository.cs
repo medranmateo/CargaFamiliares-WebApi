@@ -14,6 +14,12 @@ namespace CargaFamiliares_WebApi.Application.Repositories
             _context = context;
         }
 
+        public async Task<IEnumerable<EstadoCivil>> ObtenerEstadosCiviles()
+        {
+            var esatdosCiviles = await _context.EstadoCivil.ToListAsync();
+            return esatdosCiviles;
+        }
+
         public async Task<IEnumerable<Ocupacion>> ObtenerOcupaciones()
         {
             var ocupaciones = await _context.Ocupaciones.ToListAsync();

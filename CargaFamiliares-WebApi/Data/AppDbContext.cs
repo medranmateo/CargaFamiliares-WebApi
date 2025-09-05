@@ -25,6 +25,7 @@ namespace CargaFamiliares_WebApi.Data
         public DbSet<Parentesco> Parentescos { get; set; }
         public DbSet<Escolaridad> Escolaridades { get; set; }
         public DbSet<Ocupacion> Ocupaciones { get; set; }
+        public DbSet<EstadoCivil> EstadoCivil {  get; set; }
        
         public DbSet<PersonaIdDto> PersonaIds { get; set; }
         public DbSet<PersonaDTO> PersonaDTO { get; set; }
@@ -42,6 +43,7 @@ namespace CargaFamiliares_WebApi.Data
             modelBuilder.Entity<Parentesco>().HasNoKey();
             modelBuilder.Entity<Escolaridad>().HasNoKey();
             modelBuilder.Entity<Ocupacion>().HasNoKey();
+            modelBuilder.Entity<EstadoCivil>().HasNoKey();
 
             modelBuilder.Entity<PersonaIdDto>().HasNoKey();
             modelBuilder.Entity<FamiliarDTO>().HasNoKey();

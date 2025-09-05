@@ -16,8 +16,8 @@ namespace CargaFamiliares_WebApi.Domain.Entities
         public DateTime? FechaNacimiento { get; set; }
         [Column("PAR_CODIGO")]
         public int? Parentesco { get; set; }
-        //[Column("")]
-        //public string? EstadoCivil { get; set; }
+        [Column("EST_CODIGO")]
+        public int? EstadoCivil { get; set; }
         [Column("SEX_CODIGO")]
         public int? Sexo { get; set; }
         [Column("OCU_CODIGO")]

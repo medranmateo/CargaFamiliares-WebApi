@@ -9,6 +9,7 @@ namespace CargaFamiliares_WebApi.Application.Interfaces.IServices
         public Task<IEnumerable<Parentesco>> ObtenerTipoParentesco();
         public Task<IEnumerable<TipoSexo>> ObtenerTipoSexo();
         public Task<IEnumerable<Ocupacion>> ObtenerOcupaciones();
+        public Task<IEnumerable<EstadoCivil>> ObtenerEstadosCiviles();
 
         public Task<Agrupados> ObtenerTiposAgrupados();
     }

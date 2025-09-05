@@ -6,5 +6,6 @@
         public IEnumerable<Parentesco> Parentescos { get; set; } = Enumerable.Empty<Parentesco>();
         public IEnumerable<Escolaridad> Escolaridades { get; set; } = Enumerable.Empty<Escolaridad>();
         public IEnumerable<Ocupacion> Ocupaciones { get; set; } = Enumerable.Empty<Ocupacion>();
+        public IEnumerable<EstadoCivil> EstadosCiviles { get; set; } = Enumerable.Empty<EstadoCivil>();
     }
 }

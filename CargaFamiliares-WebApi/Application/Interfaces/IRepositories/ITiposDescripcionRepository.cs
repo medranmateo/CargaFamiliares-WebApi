@@ -13,5 +13,7 @@ namespace CargaFamiliares_WebApi.Application.Interfaces.IRepositories
         public Task<IEnumerable<TipoSexo>> ObtenerTipoSexo();
 
         public Task<IEnumerable<Ocupacion>> ObtenerOcupaciones();
+
+        public Task<IEnumerable<EstadoCivil>> ObtenerEstadosCiviles();
     }
 }

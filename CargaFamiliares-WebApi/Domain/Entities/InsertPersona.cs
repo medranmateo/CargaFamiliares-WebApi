@@ -26,7 +26,7 @@ namespace CargaFamiliares_WebApi.Domain.Entities
         public int TIOBSO { get; set; } = 0;
 
         [Column("TPE_CODIGO")]
-        public int TipoPersonaCodigo { get; set; } = 0;
+        public int TipoPersona { get; set; } = 0;
 
         [Column("PER_APELLI")]
         public string Apellido { get; set;} = string.Empty;

@@ -2,6 +2,7 @@
 using CargaFamiliares_WebApi.Application.Interfaces.IServices;
 using CargaFamiliares_WebApi.Domain.DTO;
 using CargaFamiliares_WebApi.Domain.Entities;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace CargaFamiliares_WebApi.Application.Services
 {
@@ -27,9 +28,9 @@ namespace CargaFamiliares_WebApi.Application.Services
         public async Task<int> CrearFamiliar(InsertFamiliar familiarCrearDTO)
         {
             var familiar = await this.ObtenerFamiliarByDoc(familiarCrearDTO.TipoDocumento, familiarCrearDTO.NumeroDocumento);
-            if (familiar != null || !string.IsNullOrEmpty(familiar?.NumeroDocumento)) 
+            if (!string.IsNullOrEmpty(familiar?.NumeroDocumento)) 
             {
-                throw new InvalidOperationException($"Ya existe un familiar con {familiar.TipoDocumento} {familiar.NumeroDocumento}");
+                throw new InvalidOperationException( $"Ya existe un familiar con {familiar.TipoDocumento} {familiar.NumeroDocumento}");
             }
 
             var result = await this._familiaresRepository.CrearFamiliar(familiarCrearDTO);
@@ -39,7 +40,7 @@ namespace CargaFamiliares_WebApi.Application.Services
         public async Task<int> CrearPersona(InsertPersona personaCrear)
         {
             var persona = await this.ObtenerPersonaByDoc(personaCrear.TipoDocumento, personaCrear.NumeroDocumento);
-            if (persona != null || !string.IsNullOrEmpty(persona?.NumeroDocumento))
+            if (!string.IsNullOrEmpty(persona?.NumeroDocumento))
             {
                 throw new InvalidOperationException($"Ya existe una Persona con {persona.TipoDocumento} {persona.NumeroDocumento}");
             }

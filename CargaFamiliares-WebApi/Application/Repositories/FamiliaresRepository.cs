@@ -51,7 +51,7 @@ namespace CargaFamiliares_WebApi.Application.Repositories
                 " @PER_TIOBSO ={10}, @PER_OSOBLI ={11}, @PER_NUPCIA ={12}, @idPersona ={13}";
 
             return await _context.Database.ExecuteSqlRawAsync(sql, pe.TipoDocumento, pe.NumeroDocumento, pe.EstadoCivilCodigo,
-                pe.SexoCodigo, pe.ObraSocialCodigo, pe.TipoPersonaCodigo, pe.Apellido, pe.Nombre, pe.FechaNacimiento,
+                pe.SexoCodigo, pe.ObraSocialCodigo, pe.TipoPersona, pe.Apellido, pe.Nombre, pe.FechaNacimiento,
                 pe.Personabaja ?? 0, pe.TIOBSO, pe.PER_OSOBLI, pe.PER_NUPCIA, pe.idPersona! );
         }
 

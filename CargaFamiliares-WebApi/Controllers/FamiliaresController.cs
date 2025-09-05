@@ -66,7 +66,7 @@ namespace CargaFamiliares_WebApi.Controllers
             }
             catch (InvalidOperationException ex)
             {
-                return StatusCode(409, ex.Message);
+                return Conflict(new {message=ex.Message});
             }
             catch (Exception ex)
             {
